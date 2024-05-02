@@ -1,0 +1,108 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: whitesmoke;
+}
+
+img {
+    display: block;
+}
+
+.head1 {
+    margin-bottom: 1rem;
+    font-size: 36px;
+}
+
+.search-btn, .load-more {
+    padding: .5rem;
+    margin-left: 1.5rem;    
+    border-radius: 5px;
+    border-width: 1px;
+    cursor: pointer;
+    background-color: wheat;    
+}
+
+.search-btn:hover,
+.search-btn:focus,
+.load-more:hover,
+.loadmore:focus {
+    background-color:darksalmon;
+}
+
+.search-input {
+    padding: .5rem;
+    border-radius: 5px;
+    border-width: 1px;
+}
+.wrapper {
+    position: fixed;    
+    width: 100%;
+    background-color: wheat;
+    text-align: center;    
+    display: flex;
+    flex-direction: column;
+    padding-block: 10px;
+    top: 0;
+}
+
+.search-form {
+    padding-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 640px;
+}
+
+.search-input {
+    width: 100%;
+    outline: none;    
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10rem;
+    justify-content: center;
+}
+
+.photo-card {
+    width: 310px;
+    height: 270px;
+    padding: 5px;
+    border: 1px solid wheat;
+}
+
+.photo-card:hover,
+.photo-card:focus {
+    background-color: wheat;
+}
+
+.info {
+    display: flex;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 200;
+}
+
+.simple-span {
+    font-weight: 500;
+}
+
+.load-more {
+    margin: 20 auto;
+    padding: 1rem;
+    width: 20%;
+}
+
+.gallery img {
+    object-fit: cover;
+}
